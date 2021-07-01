@@ -1,4 +1,4 @@
-package edu.ifpa.imc;
+package edu.ifpa.imc.controle;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,7 +23,7 @@ public class ImcController {
 	@RequestMapping("/")
     @ResponseBody
     String home() {
-      return "Hello World!  <br> esse e um codigo alterado para teste do CI";
+      return "Hello World!  <br> Esse e um codigo alterado para teste do CI";
     }
 	
 	@RequestMapping(value = "/imc", method = RequestMethod.GET)
