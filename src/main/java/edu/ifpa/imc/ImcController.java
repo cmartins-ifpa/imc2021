@@ -23,7 +23,7 @@ public class ImcController {
 	@RequestMapping("/")
     @ResponseBody
     String home() {
-      return "Hello World!";
+      return "Hello World!  <br> esse e um codigo alterado para teste do CI";
     }
 	
 	@RequestMapping(value = "/imc", method = RequestMethod.GET)
