@@ -20,6 +20,11 @@ public class ImcController {
 	@Autowired
 	private IMC imc ;
 	
+	@RequestMapping("/")
+    @ResponseBody
+    String home() {
+      return "Hello World!";
+    }
 	
 	@RequestMapping(value = "/imc", method = RequestMethod.GET)
 	@ResponseBody
